@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JavaScript buổi 3</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .container {
+        padding-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="exercise1">
+      <h1>Bài tập 1:</h1>
+      <p style="margin-bottom: 20px">Nhập vào ba số</p>
+      <p>Số thứ nhất</p>
+      <input type="number" id="num1" class="mb-10" />
+      <p>Số thứ hai</p>
+      <input type="number" id="num2" class="mb-10" />
+      <p>Số thứ ba</p>
+      <input type="number" id="num3" class="mb-10" />
+
+      <button onclick="printAscendingNumber()">In kết quả</button>
+      <div id="result1"></div>
+    </div>
+
+    <hr />
+
+    <div class="container" id="exercise2">
+      <h1>Bài tập 2:</h1>
+      <p>Ngày:</p>
+      <input type="number" id="date" />
+      <p>Tháng:</p>
+      <input type="number" id="month" />
+      <p>Năm:</p>
+      <input type="number" id="year" />
+      <button onclick="printDate()">In kết quả</button>
+      <div id="result2"></div>
+    </div>
+
+    <hr />
+
+    <div class="container" id="exercise3">
+      <h1>Bài tập 3:</h1>
+      <p>Ai đang sử dụng máy tính?</p>
+      <input type="text" id="user" />
+      <button onclick="printHello()">In kết quả</button>
+    </div>
+
+    <hr />
+
+    <div class="container" id="exercise4">
+      <h1>Bài tập 4:</h1>
+      <p style="margin-bottom: 20px">Nhập vào ba số</p>
+      <p>Số thứ nhất</p>
+      <input type="number" id="num1" class="mb-10" />
+      <p>Số thứ hai</p>
+      <input type="number" id="num2" class="mb-10" />
+      <p>Số thứ ba</p>
+      <input type="number" id="num3" class="mb-10" />
+
+      <button onclick="countNumber()">In kết quả</button>
+      <div id="result4"></div>
+    </div>
+
+    <hr />
+
+    <div class="container" id="exercise5">
+      <h1>Bài tập 5:</h1>
+      <p>Nhập vào tháng và năm:</p>
+      <p>Tháng:</p>
+      <input type="number" id="month" />
+      <p>Năm:</p>
+      <input type="number" id="year" />
+      <button onclick="checkDate()">In kết quả</button>
+      <div id="result5"></div>
+    </div>
+    <hr />
+
+    <div class="container" id="exercise6">
+      <h1>Bài tập 6:</h1>
+      <p>Nhập vào toạ độ (x, y) của ba sinh viên:</p>
+      <p>Sinh viên 1:</p>
+      <span>x</span><input type="number" id="x1" /> <span>y</span
+      ><input type="number" id="y1" />
+      <p>Sinh viên 2:</p>
+      <span>x</span><input type="number" id="x2" /> <span>y</span
+      ><input type="number" id="y2" />
+      <p>Sinh viên 3:</p>
+      <span>x</span><input type="number" id="x3" /> <span>y</span
+      ><input type="number" id="y3" />
+
+      <button onclick="checkDistance()">In kết quả</button>
+      <div id="result6"></div>
+    </div>
+
+    <hr />
+
+    <div class="container" id="exercise7">
+      <h1>Bài tập 7:</h1>
+      <p style="margin-bottom: 20px">Nhập vào ba số</p>
+      <p>Số thứ nhất</p>
+      <input type="number" id="num1" class="mb-10" />
+      <p>Số thứ hai</p>
+      <input type="number" id="num2" class="mb-10" />
+      <p>Số thứ ba</p>
+      <input type="number" id="num3" class="mb-10" />
+
+      <button onclick="printAbs()">In kết quả</button>
+      <div id="result7"></div>
+    </div>
+
+    <hr />
+
+    <div class="container" id="exercise8">
+      <h1>Bài tập 8:</h1>
+      <p style="margin-bottom: 20px">Nhập vào số có ba chữ số</p>
+      <input type="number" id="num" class="mb-10" />
+
+      <button onclick="printPronouce()">In kết quả</button>
+      <div id="result8"></div>
+    </div>
+
+    <hr />
+
+    <div class="container" id="exercise9">
+      <h1>Bài tập 9:</h1>
+      <p style="margin-bottom: 20px">Nhập vào ba cạnh của tam giác</p>
+      <p>Cạnh a</p>
+      <input type="number" id="a" class="mb-10" />
+      <p>Cạnh b</p>
+      <input type="number" id="b" class="mb-10" />
+      <p>Cạnh c</p>
+      <input type="number" id="c" class="mb-10" />
+
+      <button onclick="typeOfTriangle()">In kết quả</button>
+      <div id="result9"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
